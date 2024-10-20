@@ -252,6 +252,7 @@ def pretrain(
     args = get_args()
     timers = get_timers()
 
+    print_rank_0('===========training args in pretrain{}'.format(args))
     if args.log_progress:
         append_to_progress_log("Starting job")
 
